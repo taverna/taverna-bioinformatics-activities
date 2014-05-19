@@ -1,18 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>net.sf.taverna.t2</groupId>
-		<artifactId>activities</artifactId>
-		<version>1.5-SNAPSHOT</version>
+                <groupId>net.sf.taverna</groupId>
+                <artifactId>taverna-parent</artifactId>
+                <version>2.6-SNAPSHOT</version>
 	</parent>
 	<groupId>net.sf.taverna.t2.activities</groupId>
 	<artifactId>bioinformatics-activities</artifactId>
 	<name>Taverna 2 Bioinformatics activities (meta artifact)</name>
+	<version>1.6-SNAPSHOT</version>
 	<dependencies>
 		<dependency>
 			<groupId>net.sf.taverna.t2.activities</groupId>
 			<artifactId>biomart-activity</artifactId>
-			<version>${project.version}</version>
+			<version>${t2.activities.version}</version>
 		</dependency>
 <!-- 		<dependency>
 			<groupId>net.sf.taverna.t2.activities</groupId>
@@ -28,7 +29,7 @@
 		<dependency>
 			<groupId>net.sf.taverna.t2.activities</groupId>
 			<artifactId>soaplab-activity</artifactId>
-			<version>${project.version}</version>
+			<version>${t2.activities.version}</version>
 		</dependency>
 	</dependencies>
 </project>
